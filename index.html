@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+<meta name="description" content="Vikas Rai — Protocol Test Engineer transitioning to Cloud, AI &amp; MLOps Engineering. 11+ years in Telecom (5G/LTE), Azure, Terraform, Kubernetes, AI Agents.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vikas Rai — Cloud &amp; AI Engineer</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 68px; }
+body { background: #0B0F19; color: #E8EAED; font-family: 'Manrope', sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0B0F19; }
+::-webkit-scrollbar-thumb { background: linear-gradient(#00D4FF, #7B61FF); border-radius: 3px; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+input, textarea, select { font-family: inherit; }
+@keyframes bounce-scroll { 0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-8px)} }
+@keyframes scroll-dot { 0%{top:6px;opacity:1}100%{top:22px;opacity:0} }
+@keyframes blink { 0%,100%{opacity:1}50%{opacity:0} }
+@keyframes gradient-move { 0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%} }
+@keyframes orb-drift { 0%,100%{transform:scale(1) translate(0,0);opacity:.35}40%{transform:scale(1.08) translate(18px,-14px);opacity:.55}70%{transform:scale(.96) translate(-10px,8px);opacity:.3} }
+@keyframes ping { 0%{transform:scale(1);opacity:1}75%,100%{transform:scale(2.2);opacity:0} }
+@keyframes slide-in { from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)} }
+@keyframes counter-pop { 0%{transform:scale(1)}50%{transform:scale(1.12)}100%{transform:scale(1)} }
+@keyframes shimmer-pass { 0%{transform:translateX(-200%)}100%{transform:translateX(200%)} }
+@keyframes spin-slow { from{transform:rotate(0deg)}to{transform:rotate(360deg)} }
+@keyframes notification-in { from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1} }
+@keyframes pulse-ring { 0%{box-shadow:0 0 0 0 rgba(0,212,255,.4)}70%{box-shadow:0 0 0 12px rgba(0,212,255,0)}100%{box-shadow:0 0 0 0 rgba(0,212,255,0)} }
+</style>
+<style>
+[data-hid="1"]:hover { color:#00D4FF;background:rgba(0,212,255,.07); }
+[data-hid="2"]:hover { color:#00D4FF;background:rgba(0,212,255,.07); }
+[data-hid="3"]:hover { color:#00D4FF;background:rgba(0,212,255,.07); }
+[data-hid="4"]:hover { color:#00D4FF;background:rgba(0,212,255,.07); }
+[data-hid="5"]:hover { color:#00D4FF;background:rgba(0,212,255,.07); }
+[data-hid="6"]:hover { box-shadow:0 0 34px rgba(0,212,255,.55);transform:translateY(-1px); }
+[data-hid="7"]:hover { background:rgba(255,255,255,.06); }
+[data-hid="8"]:hover { color:#00D4FF;background:rgba(0,212,255,.07); }
+[data-hid="9"]:hover { color:#00D4FF;background:rgba(0,212,255,.07); }
+[data-hid="10"]:hover { color:#00D4FF;background:rgba(0,212,255,.07); }
+[data-hid="11"]:hover { color:#00D4FF;background:rgba(0,212,255,.07); }
+[data-hid="12"]:hover { color:#00D4FF;background:rgba(0,212,255,.07); }
+[data-hid="13"]:hover { transform:translateY(-2px);box-shadow:0 8px 36px rgba(0,212,255,.5); }
+[data-hid="14"]:hover { background:rgba(123,97,255,.2);border-color:rgba(123,97,255,.6);transform:translateY(-2px); }
+[data-hid="15"]:hover { color:#E8EAED;border-color:rgba(255,255,255,.25);transform:translateY(-2px); }
+[data-hid="16"]:hover { color:#00D4FF;border-color:rgba(0,212,255,.3);background:rgba(0,212,255,.07); }
+[data-hid="17"]:hover { color:#0A66C2;border-color:rgba(10,102,194,.35);background:rgba(10,102,194,.07); }
+[data-hid="18"]:hover { color:#E8EAED;border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.06); }
+[data-hid="19"]:hover { border-color:rgba(0,212,255,.35);transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,212,255,.1); }
+[data-hid="20"]:hover { border-color:rgba(254,188,46,.35);transform:translateY(-5px);box-shadow:0 20px 60px rgba(254,188,46,.08); }
+[data-hid="21"]:hover { border-color:rgba(0,255,136,.35);transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,255,136,.08); }
+[data-hid="22"]:hover { border-color:rgba(176,127,255,.35);transform:translateY(-5px);box-shadow:0 20px 60px rgba(176,127,255,.1); }
+[data-hid="23"]:hover { border-color:rgba(77,166,255,.35);transform:translateY(-5px);box-shadow:0 20px 60px rgba(77,166,255,.1); }
+[data-hid="24"]:hover { background:rgba(0,212,255,.08);border-color:rgba(0,212,255,.25);color:#00D4FF; }
+[data-hid="25"]:hover { background:rgba(254,188,46,.08);border-color:rgba(254,188,46,.25);color:#FEBC2E; }
+[data-hid="26"]:hover { background:rgba(176,127,255,.08);border-color:rgba(176,127,255,.25);color:#B07FFF; }
+[data-hid="27"]:hover { transform:translateY(-6px);border-color:rgba(0,212,255,.3);box-shadow:0 24px 64px rgba(0,212,255,.1); }
+[data-hid="28"]:hover { color:#E8EAED;border-color:rgba(255,255,255,.2); }
+[data-hid="29"]:hover { background:rgba(0,212,255,.15);border-color:rgba(0,212,255,.4); }
+[data-hid="30"]:hover { transform:translateY(-6px);border-color:rgba(254,188,46,.3);box-shadow:0 24px 64px rgba(254,188,46,.08); }
+[data-hid="31"]:hover { color:#E8EAED;border-color:rgba(255,255,255,.2); }
+[data-hid="32"]:hover { background:rgba(254,188,46,.15);border-color:rgba(254,188,46,.4); }
+[data-hid="33"]:hover { transform:translateY(-6px);border-color:rgba(0,255,136,.3);box-shadow:0 24px 64px rgba(0,255,136,.07); }
+[data-hid="34"]:hover { color:#E8EAED;border-color:rgba(255,255,255,.2); }
+[data-hid="35"]:hover { background:rgba(0,255,136,.15);border-color:rgba(0,255,136,.4); }
+[data-hid="36"]:hover { transform:translateY(-6px);border-color:rgba(176,127,255,.3);box-shadow:0 24px 64px rgba(176,127,255,.1); }
+[data-hid="37"]:hover { color:#E8EAED;border-color:rgba(255,255,255,.2); }
+[data-hid="38"]:hover { background:rgba(176,127,255,.15);border-color:rgba(176,127,255,.4); }
+[data-hid="39"]:hover { transform:translateY(-6px);border-color:rgba(0,212,255,.3);box-shadow:0 24px 64px rgba(0,212,255,.1); }
+[data-hid="40"]:hover { color:#E8EAED;border-color:rgba(255,255,255,.2); }
+[data-hid="41"]:hover { background:rgba(0,212,255,.15);border-color:rgba(0,212,255,.4); }
+[data-hid="42"]:hover { transform:translateY(-6px);border-color:rgba(255,95,87,.3);box-shadow:0 24px 64px rgba(255,95,87,.08); }
+[data-hid="43"]:hover { color:#E8EAED;border-color:rgba(255,255,255,.2); }
+[data-hid="44"]:hover { background:rgba(255,95,87,.15);border-color:rgba(255,95,87,.4); }
+[data-hid="45"]:hover { border-color:rgba(0,212,255,.35);transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,212,255,.09); }
+[data-hid="46"]:hover { border-color:rgba(254,188,46,.35);transform:translateY(-4px);box-shadow:0 16px 48px rgba(254,188,46,.07); }
+[data-hid="47"]:hover { border-color:rgba(0,212,255,.35);transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,212,255,.09); }
+[data-hid="48"]:hover { border-color:rgba(123,97,255,.35);transform:translateY(-4px);box-shadow:0 16px 48px rgba(123,97,255,.08); }
+[data-hid="49"]:hover { border-color:rgba(255,255,255,.2);transform:translateY(-4px);box-shadow:0 16px 48px rgba(255,255,255,.04); }
+[data-hid="50"]:hover { border-color:rgba(176,127,255,.35);transform:translateY(-4px);box-shadow:0 16px 48px rgba(176,127,255,.08); }
+[data-hid="51"]:hover { border-color:rgba(0,212,255,.3);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,212,255,.1); }
+[data-hid="52"]:hover { border-color:rgba(254,188,46,.3);transform:translateY(-4px);box-shadow:0 20px 60px rgba(254,188,46,.08); }
+[data-hid="53"]:hover { border-color:rgba(0,255,136,.3);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,255,136,.07); }
+[data-hid="54"]:hover { border-color:rgba(176,127,255,.3);transform:translateY(-4px);box-shadow:0 20px 60px rgba(176,127,255,.08); }
+[data-hid="55"]:hover { border-color:rgba(0,212,255,.3);background:rgba(0,212,255,.04);transform:translateX(4px); }
+[data-hid="56"]:hover { border-color:rgba(10,102,194,.3);background:rgba(10,102,194,.04);transform:translateX(4px); }
+[data-hid="57"]:hover { border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.04);transform:translateX(4px); }
+[data-hid="58"]:hover { transform:translateY(-2px);box-shadow:0 8px 36px rgba(0,212,255,.45); }
+[data-hid="59"]:hover { color:#00D4FF;border-color:rgba(0,212,255,.25);background:rgba(0,212,255,.06); }
+[data-hid="60"]:hover { color:#0A66C2;border-color:rgba(10,102,194,.25);background:rgba(10,102,194,.06); }
+[data-hid="61"]:hover { color:#E8EAED;border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.06); }
+[data-hid="62"]:hover { transform:translateY(-2px) scale(1.05);box-shadow:0 8px 28px rgba(0,212,255,.5); }
+
+/* Transition for hover-animated elements */
+[data-hid] { transition: all 0.2s ease; }
+</style>
+</head>
+<body>
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav id="navbar" style="position:fixed;top:0;left:0;right:0;z-index:1000;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,4vw,56px);background:rgba(11,15,25,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.055);transition:all .3s ease;">
+  <a href="#home" style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;background:linear-gradient(135deg,#00D4FF,#7B61FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.5px;user-select:none;">VR</a>
+  <div id="nav-links" style="display:flex;gap:4px;align-items:center;">
+    <a href="#about" data-nav="about" style="font-size:13.5px;font-weight:500;color:#9AA5B4;padding:7px 14px;border-radius:8px;transition:all .2s;" data-hid="1">About</a>
+    <a href="#skills" data-nav="skills" style="font-size:13.5px;font-weight:500;color:#9AA5B4;padding:7px 14px;border-radius:8px;transition:all .2s;" data-hid="2">Skills</a>
+    <a href="#experience" data-nav="experience" style="font-size:13.5px;font-weight:500;color:#9AA5B4;padding:7px 14px;border-radius:8px;transition:all .2s;" data-hid="3">Experience</a>
+    <a href="#projects" data-nav="projects" style="font-size:13.5px;font-weight:500;color:#9AA5B4;padding:7px 14px;border-radius:8px;transition:all .2s;" data-hid="4">Projects</a>
+    <a href="#learning" data-nav="learning" style="font-size:13.5px;font-weight:500;color:#9AA5B4;padding:7px 14px;border-radius:8px;transition:all .2s;" data-hid="5">Journey</a>
+    <a href="#contact" style="font-size:13.5px;font-weight:700;color:#0B0F19;padding:8px 20px;border-radius:9px;background:linear-gradient(135deg,#00D4FF,#0094D4);transition:all .25s;box-shadow:0 0 22px rgba(0,212,255,.3);margin-left:8px;" data-hid="6">Hire Me</a>
+  </div>
+  <button id="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" style="display:none;padding:8px;color:#E8EAED;align-items:center;justify-content:center;width:40px;height:40px;border-radius:8px;transition:all .2s;" data-hid="7">
+    <i class="fas fa-bars" style="font-size:18px;"></i>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" style="position:fixed;top:68px;left:0;right:0;z-index:998;background:rgba(11,15,25,.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.06);padding:12px 16px 20px;display:none;flex-direction:column;gap:4px;">
+  <a href="#about" id="mm-about" style="padding:12px 16px;color:#9AA5B4;font-size:15px;font-weight:500;border-radius:8px;transition:all .2s;display:block;" data-hid="8">About</a>
+  <a href="#skills" id="mm-skills" style="padding:12px 16px;color:#9AA5B4;font-size:15px;font-weight:500;border-radius:8px;transition:all .2s;display:block;" data-hid="9">Skills</a>
+  <a href="#experience" id="mm-exp" style="padding:12px 16px;color:#9AA5B4;font-size:15px;font-weight:500;border-radius:8px;transition:all .2s;display:block;" data-hid="10">Experience</a>
+  <a href="#projects" id="mm-proj" style="padding:12px 16px;color:#9AA5B4;font-size:15px;font-weight:500;border-radius:8px;transition:all .2s;display:block;" data-hid="11">Projects</a>
+  <a href="#learning" id="mm-learn" style="padding:12px 16px;color:#9AA5B4;font-size:15px;font-weight:500;border-radius:8px;transition:all .2s;display:block;" data-hid="12">Journey</a>
+  <a href="#contact" id="mm-contact" style="padding:13px 16px;margin-top:8px;color:#0B0F19;font-size:15px;font-weight:700;border-radius:9px;background:linear-gradient(135deg,#00D4FF,#0094D4);text-align:center;display:block;transition:all .2s;">Hire Me</a>
+</div>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="home" style="position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding-top:68px;">
+  <canvas id="particle-canvas"  style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;"></canvas>
+  <div style="position:absolute;top:12%;left:2%;width:clamp(300px,40vw,600px);height:clamp(300px,40vw,600px);background:radial-gradient(ellipse,rgba(0,212,255,.09) 0%,transparent 68%);border-radius:50%;pointer-events:none;animation:orb-drift 9s ease-in-out infinite;"></div>
+  <div style="position:absolute;bottom:8%;right:2%;width:clamp(250px,45vw,650px);height:clamp(250px,45vw,650px);background:radial-gradient(ellipse,rgba(123,97,255,.07) 0%,transparent 68%);border-radius:50%;pointer-events:none;animation:orb-drift 12s ease-in-out infinite 3s;"></div>
+
+  <div style="position:relative;z-index:1;width:100%;max-width:1280px;margin:0 auto;padding:clamp(60px,8vh,120px) clamp(20px,5vw,80px) clamp(80px,10vh,140px);">
+    <div style="display:inline-flex;align-items:center;gap:10px;padding:7px 18px;background:rgba(0,212,255,.07);border:1px solid rgba(0,212,255,.22);border-radius:100px;margin-bottom:36px;animation:slide-in .6s ease;">
+      <span style="position:relative;display:inline-block;width:8px;height:8px;">
+        <span style="position:absolute;inset:0;background:#00D4FF;border-radius:50%;animation:ping 1.8s ease-out infinite;"></span>
+        <span style="position:absolute;inset:0;background:#00D4FF;border-radius:50%;"></span>
+      </span>
+      <span style="font-size:12px;font-weight:700;color:#00D4FF;letter-spacing:.07em;text-transform:uppercase;">Open to Cloud &amp; AI Roles</span>
+    </div>
+
+    <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,7.5vw,96px);font-weight:800;line-height:1.03;letter-spacing:-2px;margin-bottom:20px;animation:slide-in .7s ease .1s both;">
+      <span style="display:block;color:#E8EAED;">Vikas Rai</span>
+      <span style="display:block;background:linear-gradient(135deg,#00D4FF 0%,#7B61FF 55%,#00D4FF 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradient-move 5s linear infinite;">Protocol → Cloud AI</span>
+    </h1>
+
+    <div style="font-family:'Space Grotesk',sans-serif;font-size:clamp(16px,2.2vw,26px);font-weight:500;color:#9AA5B4;margin-bottom:20px;min-height:2em;display:flex;align-items:center;gap:0;animation:slide-in .7s ease .2s both;">
+      <span id="typing-text" style="color:#C8D0DC;"></span><span id="blink-cursor" style="display:inline-block;width:2px;height:1.1em;background:#00D4FF;animation:blink 1s step-end infinite;border-radius:1px;margin-left:2px;flex-shrink:0;"></span>
+    </div>
+
+    <p style="font-size:clamp(14px,1.4vw,17px);color:#5C6B7A;max-width:560px;line-height:1.75;margin-bottom:48px;font-weight:500;animation:slide-in .7s ease .3s both;">
+      11+ years of deep 5G/LTE protocol expertise, now channeled into cloud-native infrastructure, DevOps, and AI engineering. Building intelligent systems that scale.
+    </p>
+
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px;align-items:center;animation:slide-in .7s ease .4s both;">
+      <a href="uploads/resume.pdf" download style="display:inline-flex;align-items:center;gap:9px;padding:13px 26px;background:linear-gradient(135deg,#00D4FF,#0090C8);color:#05080F;font-weight:700;font-size:14px;border-radius:10px;transition:all .3s ease;box-shadow:0 0 28px rgba(0,212,255,.32);" data-hid="13"><i class="fas fa-download"></i>Download Resume</a>
+      <a href="#projects" style="display:inline-flex;align-items:center;gap:9px;padding:13px 26px;background:rgba(123,97,255,.1);color:#C8D0DC;font-weight:600;font-size:14px;border-radius:10px;border:1px solid rgba(123,97,255,.3);transition:all .3s ease;" data-hid="14"><i class="fas fa-code-branch"></i>View Projects</a>
+      <a href="#contact" style="display:inline-flex;align-items:center;gap:9px;padding:13px 26px;background:transparent;color:#9AA5B4;font-weight:600;font-size:14px;border-radius:10px;border:1px solid rgba(255,255,255,.1);transition:all .3s ease;" data-hid="15"><i class="fas fa-paper-plane"></i>Contact Me</a>
+    </div>
+
+    <div style="display:flex;gap:10px;align-items:center;animation:slide-in .7s ease .5s both;">
+      <a href="mailto:vikasrai.tech@gmail.com" aria-label="Email" style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:9px;color:#9AA5B4;transition:all .2s;" data-hid="16"><i class="fas fa-envelope" style="font-size:15px;"></i></a>
+      <a href="https://linkedin.com/in/vikas-rai" target="_blank" rel="noopener" aria-label="LinkedIn" style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:9px;color:#9AA5B4;transition:all .2s;" data-hid="17"><i class="fab fa-linkedin" style="font-size:15px;"></i></a>
+      <a href="https://github.com/vikasrai" target="_blank" rel="noopener" aria-label="GitHub" style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:9px;color:#9AA5B4;transition:all .2s;" data-hid="18"><i class="fab fa-github" style="font-size:15px;"></i></a>
+      <div style="width:1px;height:22px;background:rgba(255,255,255,.1);margin:0 6px;"></div>
+      <span style="font-size:12.5px;color:#445060;font-weight:500;"><i class="fas fa-map-marker-alt" style="margin-right:5px;color:#5C6B7A;"></i>Bengaluru, India · Remote-Ready</span>
+    </div>
+  </div>
+
+  <div style="position:absolute;bottom:36px;left:50%;animation:bounce-scroll 2.2s ease-in-out infinite;">
+    <div style="width:24px;height:40px;border:1.5px solid rgba(0,212,255,.28);border-radius:12px;position:relative;display:flex;justify-content:center;">
+      <div style="position:absolute;width:4px;height:7px;background:#00D4FF;border-radius:2px;animation:scroll-dot 1.8s ease-in-out infinite;top:6px;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section id="about" style="padding:clamp(80px,10vh,130px) clamp(20px,5vw,80px);position:relative;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div data-reveal style="text-align:center;margin-bottom:72px;">
+      <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 14px;background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.15);border-radius:100px;margin-bottom:18px;">
+        <span style="font-size:11px;font-weight:700;color:#00D4FF;letter-spacing:.08em;text-transform:uppercase;">About Me</span>
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,54px);font-weight:700;color:#E8EAED;letter-spacing:-1.5px;margin-bottom:14px;line-height:1.1;">Engineering the Future,<br><span style="background:linear-gradient(135deg,#00D4FF,#7B61FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">One Layer at a Time</span></h2>
+      <p style="font-size:16px;color:#5C6B7A;max-width:580px;margin:0 auto;line-height:1.7;">A decade of telecom excellence, now channeling 5G protocol depth into cloud-native AI engineering.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:start;">
+      <!-- Terminal card -->
+      <div data-reveal style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:16px;overflow:hidden;">
+        <div style="padding:13px 18px;background:rgba(255,255,255,.025);border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;gap:8px;">
+          <div style="width:11px;height:11px;border-radius:50%;background:#FF5F57;"></div>
+          <div style="width:11px;height:11px;border-radius:50%;background:#FEBC2E;"></div>
+          <div style="width:11px;height:11px;border-radius:50%;background:#28C840;"></div>
+          <span style="margin-left:10px;font-size:12px;color:#445060;font-family:'JetBrains Mono',monospace;">vikas@cloud-ai ~ bash</span>
+        </div>
+        <div style="padding:22px 24px;font-family:'JetBrains Mono','Fira Code','Courier New',monospace;font-size:12.5px;line-height:1.95;">
+          <div><span style="color:#7B61FF;">$</span> <span style="color:#00D4FF;">cat</span> <span style="color:#9AA5B4;">journey.md</span></div>
+          <div style="margin:10px 0;color:#2A3545;">─────────────────────────</div>
+          <div><span style="color:#00FF88;">✓</span> <span style="color:#6B7785;">2013</span> <span style="color:#C8D0DC;">Protocol Test Engineer · LTE</span></div>
+          <div><span style="color:#00FF88;">✓</span> <span style="color:#6B7785;">2016</span> <span style="color:#C8D0DC;">5G NR Testing · Automation Lead</span></div>
+          <div><span style="color:#00FF88;">✓</span> <span style="color:#6B7785;">2019</span> <span style="color:#C8D0DC;">Senior 5G Specialist · Strategy</span></div>
+          <div><span style="color:#00FF88;">✓</span> <span style="color:#6B7785;">2022</span> <span style="color:#C8D0DC;">Test Architect · Customer Lead</span></div>
+          <div><span style="color:#FEBC2E;">→</span> <span style="color:#6B7785;">2023</span> <span style="color:#C8D0DC;">Azure Cloud · DevOps Journey</span></div>
+          <div><span style="color:#FEBC2E;">→</span> <span style="color:#6B7785;">2024</span> <span style="color:#C8D0DC;">AI Agents · MLOps Engineering</span></div>
+          <div><span style="color:#00D4FF;">▶</span> <span style="color:#6B7785;">NOW </span> <span style="color:#00D4FF;font-weight:500;">Building Intelligent Cloud Infra</span></div>
+          <div style="margin:10px 0;color:#2A3545;">─────────────────────────</div>
+          <div><span style="color:#7B61FF;">$</span> <span style="color:#00D4FF;">echo</span> <span style="color:#00FF88;">"Tagline"</span></div>
+          <div style="color:#C8D0DC;padding-left:14px;">Engineering Tomorrow's<br style=""/>Intelligent Cloud Infrastructure.</div>
+          <div style="margin-top:10px;display:flex;align-items:center;gap:4px;"><span style="color:#7B61FF;">$</span><span style="color:#445060;animation:blink 1.2s step-end infinite;"> █</span></div>
+        </div>
+      </div>
+
+      <!-- Bio + highlights -->
+      <div data-reveal style="display:flex;flex-direction:column;gap:28px;">
+        <div>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(20px,2vw,26px);font-weight:700;color:#E8EAED;margin-bottom:14px;letter-spacing:-.3px;">From Protocols to Cloud &amp; AI</h3>
+          <p style="font-size:15.5px;color:#7B8694;line-height:1.75;margin-bottom:14px;">With 11+ years at the forefront of 5G and LTE protocol testing, I've built a foundation in how networks actually work — deep, technical, and battle-tested. I work with Viavi and Keysight tools daily, write automation in Python and Bash, and understand packet flows at a level most cloud engineers never reach.</p>
+          <p style="font-size:15.5px;color:#7B8694;line-height:1.75;">Now I'm channeling that expertise into <span style="color:#00D4FF;font-weight:600;">Azure cloud infrastructure</span>, <span style="color:#7B61FF;font-weight:600;">DevOps pipelines</span>, and <span style="color:#00FF88;font-weight:600;">AI-powered automation</span> — building the intelligent systems that run tomorrow's networks.</p>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:9px;">
+          <span style="padding:7px 14px;background:rgba(0,212,255,.07);border:1px solid rgba(0,212,255,.18);border-radius:100px;font-size:12px;font-weight:700;color:#00D4FF;"><i class="fas fa-signal" style="margin-right:6px;"></i>5G Protocol Expert</span>
+          <span style="padding:7px 14px;background:rgba(123,97,255,.07);border:1px solid rgba(123,97,255,.18);border-radius:100px;font-size:12px;font-weight:700;color:#7B61FF;"><i class="fab fa-microsoft" style="margin-right:6px;"></i>Azure Engineer</span>
+          <span style="padding:7px 14px;background:rgba(0,255,136,.07);border:1px solid rgba(0,255,136,.18);border-radius:100px;font-size:12px;font-weight:700;color:#00FF88;"><i class="fas fa-robot" style="margin-right:6px;"></i>AI &amp; MLOps</span>
+          <span style="padding:7px 14px;background:rgba(254,188,46,.07);border:1px solid rgba(254,188,46,.18);border-radius:100px;font-size:12px;font-weight:700;color:#FEBC2E;"><i class="fas fa-infinity" style="margin-right:6px;"></i>DevOps Practitioner</span>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+          <div style="padding:18px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:12px;text-align:center;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:800;background:linear-gradient(135deg,#00D4FF,#7B61FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;">11+</div>
+            <div style="font-size:11px;color:#445060;margin-top:5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Years Exp.</div>
+          </div>
+          <div style="padding:18px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:12px;text-align:center;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:800;background:linear-gradient(135deg,#00D4FF,#7B61FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;">5G</div>
+            <div style="font-size:11px;color:#445060;margin-top:5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Protocol Depth</div>
+          </div>
+          <div style="padding:18px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:12px;text-align:center;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:800;background:linear-gradient(135deg,#00D4FF,#7B61FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;">6</div>
+            <div style="font-size:11px;color:#445060;margin-top:5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Cloud Projects</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SKILLS ═══════════════════ -->
+<section id="skills" style="padding:clamp(80px,10vh,130px) clamp(20px,5vw,80px);position:relative;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(10,14,30,.5) 50%,rgba(0,0,0,0) 100%);">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div data-reveal style="text-align:center;margin-bottom:64px;">
+      <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 14px;background:rgba(123,97,255,.07);border:1px solid rgba(123,97,255,.18);border-radius:100px;margin-bottom:18px;">
+        <span style="font-size:11px;font-weight:700;color:#7B61FF;letter-spacing:.08em;text-transform:uppercase;">Tech Stack</span>
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,54px);font-weight:700;color:#E8EAED;letter-spacing:-1.5px;margin-bottom:14px;">Skills &amp; Expertise</h2>
+      <p style="font-size:16px;color:#5C6B7A;max-width:520px;margin:0 auto;line-height:1.7;">Spanning protocol layers, cloud platforms, and intelligent automation.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:22px;">
+
+      <!-- Cloud -->
+      <div data-reveal style="position:relative;background:rgba(0,212,255,.025);border:1px solid rgba(0,212,255,.12);border-radius:16px;padding:26px;overflow:hidden;transition:all .3s ease;" data-hid="19">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#00D4FF,transparent);"></div>
+        <div style="width:46px;height:46px;background:rgba(0,212,255,.12);border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+          <i class="fas fa-cloud" style="color:#00D4FF;font-size:19px;"></i>
+        </div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;color:#E8EAED;margin-bottom:3px;">Cloud</h3>
+        <p style="font-size:12px;color:#445060;margin-bottom:16px;">Azure ecosystem mastery</p>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;">
+          <span style="padding:4px 11px;background:rgba(0,212,255,.09);border:1px solid rgba(0,212,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#00D4FF;">Microsoft Azure</span>
+          <span style="padding:4px 11px;background:rgba(0,212,255,.09);border:1px solid rgba(0,212,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#00D4FF;">Azure DevOps</span>
+          <span style="padding:4px 11px;background:rgba(0,212,255,.09);border:1px solid rgba(0,212,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#00D4FF;">Azure CLI</span>
+          <span style="padding:4px 11px;background:rgba(0,212,255,.09);border:1px solid rgba(0,212,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#00D4FF;">Azure ML</span>
+        </div>
+      </div>
+
+      <!-- DevOps -->
+      <div data-reveal style="position:relative;background:rgba(254,188,46,.025);border:1px solid rgba(254,188,46,.12);border-radius:16px;padding:26px;overflow:hidden;transition:all .3s ease;" data-hid="20">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FEBC2E,transparent);"></div>
+        <div style="width:46px;height:46px;background:rgba(254,188,46,.12);border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+          <i class="fas fa-gears" style="color:#FEBC2E;font-size:19px;"></i>
+        </div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;color:#E8EAED;margin-bottom:3px;">DevOps</h3>
+        <p style="font-size:12px;color:#445060;margin-bottom:16px;">Infrastructure as code &amp; pipelines</p>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;">
+          <span style="padding:4px 11px;background:rgba(254,188,46,.09);border:1px solid rgba(254,188,46,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#FEBC2E;">Terraform</span>
+          <span style="padding:4px 11px;background:rgba(254,188,46,.09);border:1px solid rgba(254,188,46,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#FEBC2E;">Docker</span>
+          <span style="padding:4px 11px;background:rgba(254,188,46,.09);border:1px solid rgba(254,188,46,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#FEBC2E;">Kubernetes</span>
+          <span style="padding:4px 11px;background:rgba(254,188,46,.09);border:1px solid rgba(254,188,46,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#FEBC2E;">Helm</span>
+          <span style="padding:4px 11px;background:rgba(254,188,46,.09);border:1px solid rgba(254,188,46,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#FEBC2E;">GitHub Actions</span>
+          <span style="padding:4px 11px;background:rgba(254,188,46,.09);border:1px solid rgba(254,188,46,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#FEBC2E;">Git</span>
+          <span style="padding:4px 11px;background:rgba(254,188,46,.09);border:1px solid rgba(254,188,46,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#FEBC2E;">YAML</span>
+          <span style="padding:4px 11px;background:rgba(254,188,46,.09);border:1px solid rgba(254,188,46,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#FEBC2E;">Pipelines</span>
+        </div>
+      </div>
+
+      <!-- Programming -->
+      <div data-reveal style="position:relative;background:rgba(0,255,136,.025);border:1px solid rgba(0,255,136,.12);border-radius:16px;padding:26px;overflow:hidden;transition:all .3s ease;" data-hid="21">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#00FF88,transparent);"></div>
+        <div style="width:46px;height:46px;background:rgba(0,255,136,.12);border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+          <i class="fas fa-code" style="color:#00FF88;font-size:19px;"></i>
+        </div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;color:#E8EAED;margin-bottom:3px;">Programming</h3>
+        <p style="font-size:12px;color:#445060;margin-bottom:16px;">Scripting &amp; automation engineering</p>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;">
+          <span style="padding:4px 11px;background:rgba(0,255,136,.09);border:1px solid rgba(0,255,136,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#00FF88;">Python</span>
+          <span style="padding:4px 11px;background:rgba(0,255,136,.09);border:1px solid rgba(0,255,136,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#00FF88;">Bash</span>
+          <span style="padding:4px 11px;background:rgba(0,255,136,.09);border:1px solid rgba(0,255,136,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#00FF88;">SQL</span>
+          <span style="padding:4px 11px;background:rgba(0,255,136,.09);border:1px solid rgba(0,255,136,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#00FF88;">Shell Scripting</span>
+        </div>
+      </div>
+
+      <!-- AI & MLOps -->
+      <div data-reveal style="position:relative;background:rgba(176,127,255,.025);border:1px solid rgba(176,127,255,.12);border-radius:16px;padding:26px;overflow:hidden;transition:all .3s ease;" data-hid="22">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#B07FFF,transparent);"></div>
+        <div style="width:46px;height:46px;background:rgba(176,127,255,.12);border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+          <i class="fas fa-brain" style="color:#B07FFF;font-size:19px;"></i>
+        </div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;color:#E8EAED;margin-bottom:3px;">AI &amp; MLOps</h3>
+        <p style="font-size:12px;color:#445060;margin-bottom:16px;">Intelligent automation &amp; ML engineering</p>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;">
+          <span style="padding:4px 11px;background:rgba(176,127,255,.09);border:1px solid rgba(176,127,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#B07FFF;">LangChain</span>
+          <span style="padding:4px 11px;background:rgba(176,127,255,.09);border:1px solid rgba(176,127,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#B07FFF;">CrewAI</span>
+          <span style="padding:4px 11px;background:rgba(176,127,255,.09);border:1px solid rgba(176,127,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#B07FFF;">MLflow</span>
+          <span style="padding:4px 11px;background:rgba(176,127,255,.09);border:1px solid rgba(176,127,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#B07FFF;">Kubeflow</span>
+          <span style="padding:4px 11px;background:rgba(176,127,255,.09);border:1px solid rgba(176,127,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#B07FFF;">Claude Code</span>
+          <span style="padding:4px 11px;background:rgba(176,127,255,.09);border:1px solid rgba(176,127,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#B07FFF;">MCP</span>
+          <span style="padding:4px 11px;background:rgba(176,127,255,.09);border:1px solid rgba(176,127,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#B07FFF;">AI Agents</span>
+          <span style="padding:4px 11px;background:rgba(176,127,255,.09);border:1px solid rgba(176,127,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#B07FFF;">GitHub Copilot</span>
+        </div>
+      </div>
+
+      <!-- Telecom -->
+      <div data-reveal style="position:relative;background:rgba(77,166,255,.025);border:1px solid rgba(77,166,255,.12);border-radius:16px;padding:26px;overflow:hidden;transition:all .3s ease;" data-hid="23">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#4DA6FF,transparent);"></div>
+        <div style="width:46px;height:46px;background:rgba(77,166,255,.12);border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;">
+          <i class="fas fa-tower-broadcast" style="color:#4DA6FF;font-size:19px;"></i>
+        </div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;color:#E8EAED;margin-bottom:3px;">Telecom</h3>
+        <p style="font-size:12px;color:#445060;margin-bottom:16px;">11+ years of protocol layer expertise</p>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;">
+          <span style="padding:4px 11px;background:rgba(77,166,255,.09);border:1px solid rgba(77,166,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#4DA6FF;">5G NR</span>
+          <span style="padding:4px 11px;background:rgba(77,166,255,.09);border:1px solid rgba(77,166,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#4DA6FF;">LTE / 4G</span>
+          <span style="padding:4px 11px;background:rgba(77,166,255,.09);border:1px solid rgba(77,166,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#4DA6FF;">Protocol Testing</span>
+          <span style="padding:4px 11px;background:rgba(77,166,255,.09);border:1px solid rgba(77,166,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#4DA6FF;">Viavi</span>
+          <span style="padding:4px 11px;background:rgba(77,166,255,.09);border:1px solid rgba(77,166,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#4DA6FF;">Keysight</span>
+          <span style="padding:4px 11px;background:rgba(77,166,255,.09);border:1px solid rgba(77,166,255,.22);border-radius:100px;font-size:11.5px;font-weight:600;color:#4DA6FF;">Log Analysis</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+<section id="experience" style="padding:clamp(80px,10vh,130px) clamp(20px,5vw,80px);position:relative;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div data-reveal style="text-align:center;margin-bottom:72px;">
+      <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 14px;background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.15);border-radius:100px;margin-bottom:18px;">
+        <span style="font-size:11px;font-weight:700;color:#00D4FF;letter-spacing:.08em;text-transform:uppercase;">Career</span>
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,54px);font-weight:700;color:#E8EAED;letter-spacing:-1.5px;margin-bottom:14px;">Professional Experience</h2>
+      <p style="font-size:16px;color:#5C6B7A;max-width:540px;margin:0 auto;line-height:1.7;">11+ years at the intersection of wireless technology and test engineering.</p>
+    </div>
+
+    <div style="max-width:860px;margin:0 auto;">
+      <!-- Company header -->
+      <div data-reveal style="display:flex;align-items:flex-start;gap:20px;margin-bottom:40px;padding:28px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:16px;">
+        <div style="width:52px;height:52px;background:linear-gradient(135deg,rgba(0,212,255,.2),rgba(123,97,255,.2));border-radius:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <i class="fas fa-tower-cell" style="color:#00D4FF;font-size:20px;"></i>
+        </div>
+        <div style="flex:1;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;color:#E8EAED;margin-bottom:4px;">Protocol Test Engineer</div>
+          <div style="font-size:14px;color:#00D4FF;font-weight:600;margin-bottom:4px;">Global 5G/LTE Network Equipment Manufacturer</div>
+          <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
+            <span style="font-size:13px;color:#5C6B7A;"><i class="far fa-calendar" style="margin-right:5px;"></i>2013 – Present · 11+ Years</span>
+            <span style="font-size:13px;color:#5C6B7A;"><i class="fas fa-map-marker-alt" style="margin-right:5px;"></i>Bengaluru, India</span>
+            <span style="padding:3px 10px;background:rgba(0,255,136,.1);border:1px solid rgba(0,255,136,.2);border-radius:100px;font-size:11px;font-weight:700;color:#00FF88;">Full-Time · Active</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline phases -->
+      <div style="position:relative;padding-left:32px;">
+        <div style="position:absolute;left:11px;top:0;bottom:0;width:1.5px;background:linear-gradient(180deg,#00D4FF,#7B61FF,rgba(123,97,255,.1));"></div>
+
+        <!-- Phase 4 -->
+        <div data-reveal style="position:relative;margin-bottom:36px;">
+          <div style="position:absolute;left:-32px;top:4px;width:22px;height:22px;background:#0B0F19;border:2px solid #00D4FF;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <div style="width:8px;height:8px;background:#00D4FF;border-radius:50%;"></div>
+          </div>
+          <div style="padding:22px;background:rgba(0,212,255,.03);border:1px solid rgba(0,212,255,.1);border-radius:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
+              <h4 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;">Cloud &amp; AI Transition Lead</h4>
+              <span style="font-size:12px;color:#00D4FF;font-weight:600;white-space:nowrap;">2023 – Present</span>
+            </div>
+            <ul style="display:flex;flex-direction:column;gap:7px;list-style:none;">
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#00D4FF;">▸</span>Leading cloud adoption initiative, earning Azure certifications while maintaining test leadership</li>
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#00D4FF;">▸</span>Building AI-powered test log analysis tools using Python and LangChain agents</li>
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#00D4FF;">▸</span>Designing DevOps pipelines for automated test execution on Azure infrastructure</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div data-reveal style="position:relative;margin-bottom:36px;">
+          <div style="position:absolute;left:-32px;top:4px;width:22px;height:22px;background:#0B0F19;border:2px solid #7B61FF;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <div style="width:8px;height:8px;background:#7B61FF;border-radius:50%;"></div>
+          </div>
+          <div style="padding:22px;background:rgba(123,97,255,.03);border:1px solid rgba(123,97,255,.1);border-radius:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
+              <h4 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;">5G Test Architect &amp; Strategy Lead</h4>
+              <span style="font-size:12px;color:#7B61FF;font-weight:600;white-space:nowrap;">2020 – 2023</span>
+            </div>
+            <ul style="display:flex;flex-direction:column;gap:7px;list-style:none;">
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#7B61FF;">▸</span>Defined end-to-end 5G NR test strategy for new feature releases and customer deployments</li>
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#7B61FF;">▸</span>Led customer technical interactions and acceptance testing for Tier-1 operators</li>
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#7B61FF;">▸</span>Performance testing and log analysis for protocol layer defect isolation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div data-reveal style="position:relative;margin-bottom:36px;">
+          <div style="position:absolute;left:-32px;top:4px;width:22px;height:22px;background:#0B0F19;border:2px solid #4DA6FF;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <div style="width:8px;height:8px;background:#4DA6FF;border-radius:50%;"></div>
+          </div>
+          <div style="padding:22px;background:rgba(77,166,255,.03);border:1px solid rgba(77,166,255,.1);border-radius:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
+              <h4 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;">Senior Protocol Test Engineer &amp; Automation Lead</h4>
+              <span style="font-size:12px;color:#4DA6FF;font-weight:600;white-space:nowrap;">2016 – 2020</span>
+            </div>
+            <ul style="display:flex;flex-direction:column;gap:7px;list-style:none;">
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#4DA6FF;">▸</span>Built Python &amp; Bash automation frameworks, reducing test cycle time by 40%</li>
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#4DA6FF;">▸</span>5G NR feature validation across RRC, NAS, PDCP, RLC, and MAC protocol layers</li>
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#4DA6FF;">▸</span>Used Viavi and Keysight tools for conformance and interoperability testing</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 1 -->
+        <div data-reveal style="position:relative;">
+          <div style="position:absolute;left:-32px;top:4px;width:22px;height:22px;background:#0B0F19;border:2px solid rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <div style="width:8px;height:8px;background:rgba(255,255,255,.2);border-radius:50%;"></div>
+          </div>
+          <div style="padding:22px;background:rgba(255,255,255,.018);border:1px solid rgba(255,255,255,.06);border-radius:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
+              <h4 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;">Junior Protocol Test Engineer · LTE</h4>
+              <span style="font-size:12px;color:#9AA5B4;font-weight:600;white-space:nowrap;">2013 – 2016</span>
+            </div>
+            <ul style="display:flex;flex-direction:column;gap:7px;list-style:none;">
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#9AA5B4;">▸</span>LTE protocol test design and execution for 4G feature releases</li>
+              <li style="font-size:14px;color:#7B8694;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:#9AA5B4;">▸</span>Troubleshooting and root-cause analysis from protocol logs and traces</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ PROJECTS ═══════════════════ -->
+<section id="projects" style="padding:clamp(80px,10vh,130px) clamp(20px,5vw,80px);position:relative;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(10,14,30,.5) 50%,rgba(0,0,0,0) 100%);">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div data-reveal style="text-align:center;margin-bottom:48px;">
+      <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 14px;background:rgba(0,255,136,.06);border:1px solid rgba(0,255,136,.15);border-radius:100px;margin-bottom:18px;">
+        <span style="font-size:11px;font-weight:700;color:#00FF88;letter-spacing:.08em;text-transform:uppercase;">Featured Work</span>
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,54px);font-weight:700;color:#E8EAED;letter-spacing:-1.5px;margin-bottom:14px;">Projects</h2>
+      <p style="font-size:16px;color:#5C6B7A;max-width:520px;margin:0 auto;line-height:1.7;">Real-world cloud, DevOps, and AI engineering projects built from scratch.</p>
+    </div>
+
+    <!-- Filter bar -->
+    <div data-reveal style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:40px;">
+      <button data-filter-btn="all" style="padding:8px 20px;background:rgba(0,212,255,.12);border:1px solid rgba(0,212,255,.35);border-radius:100px;font-size:13px;font-weight:600;color:#00D4FF;transition:all .2s;">All</button>
+      <button data-filter-btn="cloud" style="padding:8px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:100px;font-size:13px;font-weight:600;color:#9AA5B4;transition:all .2s;" data-hid="24">Cloud</button>
+      <button data-filter-btn="devops" style="padding:8px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:100px;font-size:13px;font-weight:600;color:#9AA5B4;transition:all .2s;" data-hid="25">DevOps</button>
+      <button data-filter-btn="ai" style="padding:8px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:100px;font-size:13px;font-weight:600;color:#9AA5B4;transition:all .2s;" data-hid="26">AI / ML</button>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px;">
+
+      <!-- Project 1 -->
+      <div data-project-cat="cloud" style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden;transition:all .35s ease;" data-hid="27">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#00D4FF,#7B61FF);"></div>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;">
+          <div style="width:46px;height:46px;background:rgba(0,212,255,.1);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fas fa-cloud" style="color:#00D4FF;font-size:19px;"></i>
+          </div>
+          <span style="padding:3px 10px;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);border-radius:100px;font-size:10.5px;font-weight:700;color:#00D4FF;white-space:nowrap;">Cloud</span>
+        </div>
+        <div>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;margin-bottom:8px;">Azure Landing Zone via Terraform</h3>
+          <p style="font-size:13.5px;color:#5C6B7A;line-height:1.65;">Enterprise-grade Azure Landing Zone following Microsoft CAF. Hub-spoke network topology, policy enforcement, and management group hierarchy — fully automated with IaC.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Terraform</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Azure</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Azure Policy</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">GitHub Actions</span>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:auto;">
+          <a href="https://github.com/vikasrai" target="_blank" rel="noopener" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;font-size:12.5px;font-weight:600;color:#9AA5B4;transition:all .2s;" data-hid="28"><i class="fab fa-github"></i>GitHub</a>
+          <a href="#" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);border-radius:8px;font-size:12.5px;font-weight:600;color:#00D4FF;transition:all .2s;" data-hid="29"><i class="fas fa-arrow-up-right-from-square"></i>Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div data-project-cat="devops" style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden;transition:all .35s ease;" data-hid="30">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FEBC2E,#FF8C42);"></div>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;">
+          <div style="width:46px;height:46px;background:rgba(254,188,46,.1);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fas fa-dharmachakra" style="color:#FEBC2E;font-size:19px;"></i>
+          </div>
+          <span style="padding:3px 10px;background:rgba(254,188,46,.08);border:1px solid rgba(254,188,46,.2);border-radius:100px;font-size:10.5px;font-weight:700;color:#FEBC2E;white-space:nowrap;">DevOps</span>
+        </div>
+        <div>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;margin-bottom:8px;">AKS Deployment via Azure DevOps</h3>
+          <p style="font-size:13.5px;color:#5C6B7A;line-height:1.65;">Production-ready AKS cluster with auto-scaling, ingress routing, Prometheus &amp; Grafana monitoring, and full CI/CD integration via Azure DevOps Pipelines.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">AKS</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Helm</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Azure DevOps</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">ACR</span>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:auto;">
+          <a href="https://github.com/vikasrai" target="_blank" rel="noopener" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;font-size:12.5px;font-weight:600;color:#9AA5B4;transition:all .2s;" data-hid="31"><i class="fab fa-github"></i>GitHub</a>
+          <a href="#" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(254,188,46,.08);border:1px solid rgba(254,188,46,.2);border-radius:8px;font-size:12.5px;font-weight:600;color:#FEBC2E;transition:all .2s;" data-hid="32"><i class="fas fa-arrow-up-right-from-square"></i>Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div data-project-cat="devops" style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden;transition:all .35s ease;" data-hid="33">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#00FF88,#00D4FF);"></div>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;">
+          <div style="width:46px;height:46px;background:rgba(0,255,136,.1);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fas fa-infinity" style="color:#00FF88;font-size:19px;"></i>
+          </div>
+          <span style="padding:3px 10px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.2);border-radius:100px;font-size:10.5px;font-weight:700;color:#00FF88;white-space:nowrap;">DevOps</span>
+        </div>
+        <div>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;margin-bottom:8px;">End-to-End CI/CD Pipeline</h3>
+          <p style="font-size:13.5px;color:#5C6B7A;line-height:1.65;">Multi-stage pipeline with security scanning (SAST/DAST), Docker build, automated testing, and zero-downtime blue-green deployments on Kubernetes.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">GitHub Actions</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Docker</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Kubernetes</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Trivy</span>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:auto;">
+          <a href="https://github.com/vikasrai" target="_blank" rel="noopener" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;font-size:12.5px;font-weight:600;color:#9AA5B4;transition:all .2s;" data-hid="34"><i class="fab fa-github"></i>GitHub</a>
+          <a href="#" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.2);border-radius:8px;font-size:12.5px;font-weight:600;color:#00FF88;transition:all .2s;" data-hid="35"><i class="fas fa-arrow-up-right-from-square"></i>Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div data-project-cat="ai" style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden;transition:all .35s ease;" data-hid="36">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#B07FFF,#7B61FF);"></div>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;">
+          <div style="width:46px;height:46px;background:rgba(176,127,255,.1);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fas fa-robot" style="color:#B07FFF;font-size:19px;"></i>
+          </div>
+          <span style="padding:3px 10px;background:rgba(176,127,255,.08);border:1px solid rgba(176,127,255,.2);border-radius:100px;font-size:10.5px;font-weight:700;color:#B07FFF;white-space:nowrap;">AI / ML</span>
+        </div>
+        <div>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;margin-bottom:8px;">AI Agent-Powered DevOps Assistant</h3>
+          <p style="font-size:13.5px;color:#5C6B7A;line-height:1.65;">Multi-agent DevOps assistant using LangChain + CrewAI that automates log analysis, incident triage, and infrastructure decisions via Model Context Protocol.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">LangChain</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">CrewAI</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">MCP</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Azure OpenAI</span>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:auto;">
+          <a href="https://github.com/vikasrai" target="_blank" rel="noopener" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;font-size:12.5px;font-weight:600;color:#9AA5B4;transition:all .2s;" data-hid="37"><i class="fab fa-github"></i>GitHub</a>
+          <a href="#" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(176,127,255,.08);border:1px solid rgba(176,127,255,.2);border-radius:8px;font-size:12.5px;font-weight:600;color:#B07FFF;transition:all .2s;" data-hid="38"><i class="fas fa-arrow-up-right-from-square"></i>Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div data-project-cat="ai" style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden;transition:all .35s ease;" data-hid="39">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#00D4FF,#B07FFF);"></div>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;">
+          <div style="width:46px;height:46px;background:rgba(0,212,255,.1);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fas fa-chart-line" style="color:#00D4FF;font-size:19px;"></i>
+          </div>
+          <span style="padding:3px 10px;background:rgba(176,127,255,.08);border:1px solid rgba(176,127,255,.2);border-radius:100px;font-size:10.5px;font-weight:700;color:#B07FFF;white-space:nowrap;">AI / ML</span>
+        </div>
+        <div>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;margin-bottom:8px;">MLOps Pipeline with MLflow</h3>
+          <p style="font-size:13.5px;color:#5C6B7A;line-height:1.65;">End-to-end MLOps pipeline with experiment tracking, model registry, automated retraining triggers, and Azure ML deployment with data drift monitoring.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">MLflow</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Kubeflow</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Azure ML</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Python</span>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:auto;">
+          <a href="https://github.com/vikasrai" target="_blank" rel="noopener" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;font-size:12.5px;font-weight:600;color:#9AA5B4;transition:all .2s;" data-hid="40"><i class="fab fa-github"></i>GitHub</a>
+          <a href="#" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);border-radius:8px;font-size:12.5px;font-weight:600;color:#00D4FF;transition:all .2s;" data-hid="41"><i class="fas fa-arrow-up-right-from-square"></i>Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div data-project-cat="ai" style="background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden;transition:all .35s ease;" data-hid="42">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#FF5F57,#FEBC2E);"></div>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;">
+          <div style="width:46px;height:46px;background:rgba(255,95,87,.1);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fas fa-heart-pulse" style="color:#FF5F57;font-size:19px;"></i>
+          </div>
+          <span style="padding:3px 10px;background:rgba(176,127,255,.08);border:1px solid rgba(176,127,255,.2);border-radius:100px;font-size:10.5px;font-weight:700;color:#B07FFF;white-space:nowrap;">AI / ML</span>
+        </div>
+        <div>
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;margin-bottom:8px;">Sleep Apnea AI Detection System</h3>
+          <p style="font-size:13.5px;color:#5C6B7A;line-height:1.65;">Deep learning model for sleep apnea detection from polysomnography signals. Real-time classification with 95%+ accuracy and a clinical monitoring dashboard.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">TensorFlow</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Python</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">FastAPI</span>
+          <span style="padding:3px 9px;background:rgba(255,255,255,.05);border-radius:4px;font-size:11px;font-weight:600;color:#9AA5B4;">Signal DSP</span>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:auto;">
+          <a href="https://github.com/vikasrai" target="_blank" rel="noopener" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;font-size:12.5px;font-weight:600;color:#9AA5B4;transition:all .2s;" data-hid="43"><i class="fab fa-github"></i>GitHub</a>
+          <a href="#" style="flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px;background:rgba(255,95,87,.08);border:1px solid rgba(255,95,87,.2);border-radius:8px;font-size:12.5px;font-weight:600;color:#FF5F57;transition:all .2s;" data-hid="44"><i class="fas fa-arrow-up-right-from-square"></i>Demo</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CERTIFICATIONS ═══════════════════ -->
+<section id="certifications" style="padding:clamp(80px,10vh,130px) clamp(20px,5vw,80px);position:relative;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div data-reveal style="text-align:center;margin-bottom:64px;">
+      <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 14px;background:rgba(254,188,46,.07);border:1px solid rgba(254,188,46,.18);border-radius:100px;margin-bottom:18px;">
+        <span style="font-size:11px;font-weight:700;color:#FEBC2E;letter-spacing:.08em;text-transform:uppercase;">Credentials</span>
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,54px);font-weight:700;color:#E8EAED;letter-spacing:-1.5px;margin-bottom:14px;">Certifications</h2>
+      <p style="font-size:16px;color:#5C6B7A;max-width:520px;margin:0 auto;line-height:1.7;">Industry-recognized credentials in cloud, infrastructure, and AI engineering.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;">
+
+      <div data-reveal style="padding:24px;background:rgba(255,255,255,.02);border:1px solid rgba(0,212,255,.12);border-radius:14px;display:flex;gap:16px;align-items:flex-start;transition:all .3s;" data-hid="45">
+        <div style="width:42px;height:42px;background:rgba(0,212,255,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fab fa-microsoft" style="color:#00D4FF;font-size:18px;"></i></div>
+        <div><div style="font-size:14px;font-weight:700;color:#E8EAED;margin-bottom:4px;font-family:'Space Grotesk',sans-serif;">Azure Fundamentals</div><div style="font-size:12px;color:#5C6B7A;margin-bottom:6px;">AZ-900 · Microsoft</div><span style="padding:2px 8px;background:rgba(0,255,136,.1);border-radius:4px;font-size:11px;font-weight:700;color:#00FF88;">Earned</span></div>
+      </div>
+
+      <div data-reveal style="padding:24px;background:rgba(255,255,255,.02);border:1px solid rgba(254,188,46,.12);border-radius:14px;display:flex;gap:16px;align-items:flex-start;transition:all .3s;" data-hid="46">
+        <div style="width:42px;height:42px;background:rgba(254,188,46,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-layer-group" style="color:#FEBC2E;font-size:18px;"></i></div>
+        <div><div style="font-size:14px;font-weight:700;color:#E8EAED;margin-bottom:4px;font-family:'Space Grotesk',sans-serif;">Terraform Associate</div><div style="font-size:12px;color:#5C6B7A;margin-bottom:6px;">003 · HashiCorp</div><span style="padding:2px 8px;background:rgba(254,188,46,.1);border-radius:4px;font-size:11px;font-weight:700;color:#FEBC2E;">In Progress</span></div>
+      </div>
+
+      <div data-reveal style="padding:24px;background:rgba(255,255,255,.02);border:1px solid rgba(0,212,255,.12);border-radius:14px;display:flex;gap:16px;align-items:flex-start;transition:all .3s;" data-hid="47">
+        <div style="width:42px;height:42px;background:rgba(0,212,255,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fab fa-docker" style="color:#00D4FF;font-size:18px;"></i></div>
+        <div><div style="font-size:14px;font-weight:700;color:#E8EAED;margin-bottom:4px;font-family:'Space Grotesk',sans-serif;">Docker Certified</div><div style="font-size:12px;color:#5C6B7A;margin-bottom:6px;">DCA · Docker Inc.</div><span style="padding:2px 8px;background:rgba(254,188,46,.1);border-radius:4px;font-size:11px;font-weight:700;color:#FEBC2E;">Pursuing</span></div>
+      </div>
+
+      <div data-reveal style="padding:24px;background:rgba(255,255,255,.02);border:1px solid rgba(123,97,255,.12);border-radius:14px;display:flex;gap:16px;align-items:flex-start;transition:all .3s;" data-hid="48">
+        <div style="width:42px;height:42px;background:rgba(123,97,255,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-dharmachakra" style="color:#7B61FF;font-size:18px;"></i></div>
+        <div><div style="font-size:14px;font-weight:700;color:#E8EAED;margin-bottom:4px;font-family:'Space Grotesk',sans-serif;">CKA</div><div style="font-size:12px;color:#5C6B7A;margin-bottom:6px;">Kubernetes Admin · CNCF</div><span style="padding:2px 8px;background:rgba(254,188,46,.1);border-radius:4px;font-size:11px;font-weight:700;color:#FEBC2E;">Pursuing</span></div>
+      </div>
+
+      <div data-reveal style="padding:24px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:14px;display:flex;gap:16px;align-items:flex-start;transition:all .3s;" data-hid="49">
+        <div style="width:42px;height:42px;background:rgba(255,255,255,.06);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fab fa-github" style="color:#E8EAED;font-size:18px;"></i></div>
+        <div><div style="font-size:14px;font-weight:700;color:#E8EAED;margin-bottom:4px;font-family:'Space Grotesk',sans-serif;">GitHub Actions</div><div style="font-size:12px;color:#5C6B7A;margin-bottom:6px;">Certification · GitHub</div><span style="padding:2px 8px;background:rgba(254,188,46,.1);border-radius:4px;font-size:11px;font-weight:700;color:#FEBC2E;">Pursuing</span></div>
+      </div>
+
+      <div data-reveal style="padding:24px;background:rgba(255,255,255,.02);border:1px solid rgba(176,127,255,.12);border-radius:14px;display:flex;gap:16px;align-items:flex-start;transition:all .3s;" data-hid="50">
+        <div style="width:42px;height:42px;background:rgba(176,127,255,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-brain" style="color:#B07FFF;font-size:18px;"></i></div>
+        <div><div style="font-size:14px;font-weight:700;color:#E8EAED;margin-bottom:4px;font-family:'Space Grotesk',sans-serif;">AI Engineering</div><div style="font-size:12px;color:#5C6B7A;margin-bottom:6px;">Azure AI · Microsoft</div><span style="padding:2px 8px;background:rgba(254,188,46,.1);border-radius:4px;font-size:11px;font-weight:700;color:#FEBC2E;">Pursuing</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ LEARNING JOURNEY ═══════════════════ -->
+<section id="learning" style="padding:clamp(80px,10vh,130px) clamp(20px,5vw,80px);position:relative;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(10,14,30,.5) 50%,rgba(0,0,0,0) 100%);">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div data-reveal style="text-align:center;margin-bottom:72px;">
+      <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 14px;background:rgba(0,255,136,.06);border:1px solid rgba(0,255,136,.15);border-radius:100px;margin-bottom:18px;">
+        <span style="font-size:11px;font-weight:700;color:#00FF88;letter-spacing:.08em;text-transform:uppercase;">Roadmap</span>
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,54px);font-weight:700;color:#E8EAED;letter-spacing:-1.5px;margin-bottom:14px;">Learning Journey</h2>
+      <p style="font-size:16px;color:#5C6B7A;max-width:520px;margin:0 auto;line-height:1.7;">A deliberate, structured path from telecom protocol expert to AI infrastructure engineer.</p>
+    </div>
+
+    <div style="max-width:720px;margin:0 auto;position:relative;">
+      <div style="position:absolute;left:20px;top:0;bottom:0;width:1.5px;background:linear-gradient(180deg,#00FF88,#00D4FF,#7B61FF,rgba(123,97,255,.1));"></div>
+
+      <!-- Phase A: Foundation -->
+      <div data-reveal style="position:relative;padding-left:56px;margin-bottom:40px;">
+        <div style="position:absolute;left:8px;top:2px;width:26px;height:26px;background:#00FF88;border-radius:50%;display:flex;align-items:center;justify-content:center;"><i class="fas fa-check" style="color:#0B0F19;font-size:11px;"></i></div>
+        <div style="padding:22px 24px;background:rgba(0,255,136,.03);border:1px solid rgba(0,255,136,.15);border-radius:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:14px;">
+            <h4 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;">Phase 1 — Cloud Foundation</h4>
+            <span style="padding:3px 10px;background:rgba(0,255,136,.1);border-radius:100px;font-size:11px;font-weight:700;color:#00FF88;">Completed</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="padding:5px 13px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.2);border-radius:100px;font-size:12px;font-weight:600;color:#00FF88;"><i class="fab fa-microsoft" style="margin-right:5px;"></i>Azure AZ-900</span>
+            <span style="padding:5px 13px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.2);border-radius:100px;font-size:12px;font-weight:600;color:#00FF88;"><i class="fas fa-layer-group" style="margin-right:5px;"></i>Terraform Basics</span>
+            <span style="padding:5px 13px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.2);border-radius:100px;font-size:12px;font-weight:600;color:#00FF88;"><i class="fab fa-docker" style="margin-right:5px;"></i>Docker</span>
+            <span style="padding:5px 13px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.2);border-radius:100px;font-size:12px;font-weight:600;color:#00FF88;"><i class="fab fa-git-alt" style="margin-right:5px;"></i>Git &amp; GitHub</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase B: Active -->
+      <div data-reveal style="position:relative;padding-left:56px;margin-bottom:40px;">
+        <div style="position:absolute;left:8px;top:2px;width:26px;height:26px;background:#00D4FF;border-radius:50%;display:flex;align-items:center;justify-content:center;animation:pulse-ring 2s ease infinite;"><i class="fas fa-sync" style="color:#0B0F19;font-size:10px;"></i></div>
+        <div style="padding:22px 24px;background:rgba(0,212,255,.03);border:1px solid rgba(0,212,255,.18);border-radius:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:14px;">
+            <h4 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;">Phase 2 — DevOps &amp; Kubernetes</h4>
+            <span style="padding:3px 10px;background:rgba(0,212,255,.1);border-radius:100px;font-size:11px;font-weight:700;color:#00D4FF;">Active Now</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="padding:5px 13px;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);border-radius:100px;font-size:12px;font-weight:600;color:#00D4FF;"><i class="fas fa-dharmachakra" style="margin-right:5px;"></i>Kubernetes / AKS</span>
+            <span style="padding:5px 13px;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);border-radius:100px;font-size:12px;font-weight:600;color:#00D4FF;"><i class="fas fa-infinity" style="margin-right:5px;"></i>Azure DevOps CI/CD</span>
+            <span style="padding:5px 13px;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);border-radius:100px;font-size:12px;font-weight:600;color:#00D4FF;"><i class="fas fa-layer-group" style="margin-right:5px;"></i>Terraform Adv.</span>
+            <span style="padding:5px 13px;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);border-radius:100px;font-size:12px;font-weight:600;color:#00D4FF;"><i class="fab fa-github" style="margin-right:5px;"></i>GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase C: AI/MLOps -->
+      <div data-reveal style="position:relative;padding-left:56px;margin-bottom:40px;">
+        <div style="position:absolute;left:8px;top:2px;width:26px;height:26px;background:rgba(176,127,255,.2);border:1.5px solid #B07FFF;border-radius:50%;display:flex;align-items:center;justify-content:center;"><i class="fas fa-brain" style="color:#B07FFF;font-size:10px;"></i></div>
+        <div style="padding:22px 24px;background:rgba(176,127,255,.025);border:1px solid rgba(176,127,255,.12);border-radius:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:14px;">
+            <h4 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#E8EAED;">Phase 3 — AI &amp; MLOps</h4>
+            <span style="padding:3px 10px;background:rgba(176,127,255,.1);border-radius:100px;font-size:11px;font-weight:700;color:#B07FFF;">In Parallel</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="padding:5px 13px;background:rgba(176,127,255,.08);border:1px solid rgba(176,127,255,.2);border-radius:100px;font-size:12px;font-weight:600;color:#B07FFF;"><i class="fas fa-robot" style="margin-right:5px;"></i>AI Agents</span>
+            <span style="padding:5px 13px;background:rgba(176,127,255,.08);border:1px solid rgba(176,127,255,.2);border-radius:100px;font-size:12px;font-weight:600;color:#B07FFF;">LangChain</span>
+            <span style="padding:5px 13px;background:rgba(176,127,255,.08);border:1px solid rgba(176,127,255,.2);border-radius:100px;font-size:12px;font-weight:600;color:#B07FFF;">CrewAI</span>
+            <span style="padding:5px 13px;background:rgba(176,127,255,.08);border:1px solid rgba(176,127,255,.2);border-radius:100px;font-size:12px;font-weight:600;color:#B07FFF;">MLflow</span>
+            <span style="padding:5px 13px;background:rgba(176,127,255,.08);border:1px solid rgba(176,127,255,.2);border-radius:100px;font-size:12px;font-weight:600;color:#B07FFF;">MCP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase D: Horizon -->
+      <div data-reveal style="position:relative;padding-left:56px;">
+        <div style="position:absolute;left:8px;top:2px;width:26px;height:26px;background:rgba(123,97,255,.15);border:1.5px dashed rgba(123,97,255,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;"><i class="fas fa-rocket" style="color:#7B61FF;font-size:10px;"></i></div>
+        <div style="padding:22px 24px;background:rgba(123,97,255,.02);border:1px dashed rgba(123,97,255,.15);border-radius:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:14px;">
+            <h4 style="font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;color:#9AA5B4;">Phase 4 — AI Infrastructure Engineer</h4>
+            <span style="padding:3px 10px;background:rgba(123,97,255,.08);border-radius:100px;font-size:11px;font-weight:700;color:#7B61FF;">Target</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="padding:5px 13px;background:rgba(123,97,255,.06);border:1px solid rgba(123,97,255,.15);border-radius:100px;font-size:12px;font-weight:600;color:#7B61FF;">Generative AI</span>
+            <span style="padding:5px 13px;background:rgba(123,97,255,.06);border:1px solid rgba(123,97,255,.15);border-radius:100px;font-size:12px;font-weight:600;color:#7B61FF;">RAG Pipelines</span>
+            <span style="padding:5px 13px;background:rgba(123,97,255,.06);border:1px solid rgba(123,97,255,.15);border-radius:100px;font-size:12px;font-weight:600;color:#7B61FF;">Platform Engineering</span>
+            <span style="padding:5px 13px;background:rgba(123,97,255,.06);border:1px solid rgba(123,97,255,.15);border-radius:100px;font-size:12px;font-weight:600;color:#7B61FF;">FinOps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ ACHIEVEMENTS ═══════════════════ -->
+<section id="achievements" style="padding:clamp(80px,10vh,130px) clamp(20px,5vw,80px);position:relative;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div data-reveal style="text-align:center;margin-bottom:64px;">
+      <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 14px;background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.15);border-radius:100px;margin-bottom:18px;">
+        <span style="font-size:11px;font-weight:700;color:#00D4FF;letter-spacing:.08em;text-transform:uppercase;">By the Numbers</span>
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,54px);font-weight:700;color:#E8EAED;letter-spacing:-1.5px;margin-bottom:14px;">Impact &amp; Achievements</h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;">
+
+      <div data-reveal style="padding:36px 24px;background:rgba(0,212,255,.03);border:1px solid rgba(0,212,255,.12);border-radius:16px;text-align:center;position:relative;overflow:hidden;transition:all .3s;" data-hid="51">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,212,255,.08),transparent 70%);pointer-events:none;"></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,5vw,60px);font-weight:800;background:linear-gradient(135deg,#00D4FF,#7B61FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;margin-bottom:8px;" data-counter data-target="11" data-suffix="+">0</div>
+        <div style="font-size:14px;font-weight:700;color:#E8EAED;margin-bottom:4px;">Years Experience</div>
+        <div style="font-size:12px;color:#445060;">5G / LTE Telecom</div>
+      </div>
+
+      <div data-reveal style="padding:36px 24px;background:rgba(254,188,46,.03);border:1px solid rgba(254,188,46,.12);border-radius:16px;text-align:center;position:relative;overflow:hidden;transition:all .3s;" data-hid="52">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(254,188,46,.07),transparent 70%);pointer-events:none;"></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,5vw,60px);font-weight:800;background:linear-gradient(135deg,#FEBC2E,#FF8C42);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;margin-bottom:8px;" data-counter data-target="100" data-suffix="+">0</div>
+        <div style="font-size:14px;font-weight:700;color:#E8EAED;margin-bottom:4px;">Test Scenarios</div>
+        <div style="font-size:12px;color:#445060;">Protocol &amp; Conformance</div>
+      </div>
+
+      <div data-reveal style="padding:36px 24px;background:rgba(0,255,136,.03);border:1px solid rgba(0,255,136,.12);border-radius:16px;text-align:center;position:relative;overflow:hidden;transition:all .3s;" data-hid="53">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,255,136,.07),transparent 70%);pointer-events:none;"></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,5vw,60px);font-weight:800;background:linear-gradient(135deg,#00FF88,#00D4FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;margin-bottom:8px;" data-counter data-target="50" data-suffix="+">0</div>
+        <div style="font-size:14px;font-weight:700;color:#E8EAED;margin-bottom:4px;">Automation Scripts</div>
+        <div style="font-size:12px;color:#445060;">Python &amp; Bash</div>
+      </div>
+
+      <div data-reveal style="padding:36px 24px;background:rgba(176,127,255,.03);border:1px solid rgba(176,127,255,.12);border-radius:16px;text-align:center;position:relative;overflow:hidden;transition:all .3s;" data-hid="54">
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(176,127,255,.07),transparent 70%);pointer-events:none;"></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,5vw,60px);font-weight:800;background:linear-gradient(135deg,#B07FFF,#7B61FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;margin-bottom:8px;" data-counter data-target="6" data-suffix="">0</div>
+        <div style="font-size:14px;font-weight:700;color:#E8EAED;margin-bottom:4px;">Cloud Projects</div>
+        <div style="font-size:12px;color:#445060;">Azure · AI · DevOps</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section id="contact" style="padding:clamp(80px,10vh,130px) clamp(20px,5vw,80px);position:relative;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(8,12,24,.6) 100%);">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div data-reveal style="text-align:center;margin-bottom:72px;">
+      <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 14px;background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.15);border-radius:100px;margin-bottom:18px;">
+        <span style="font-size:11px;font-weight:700;color:#00D4FF;letter-spacing:.08em;text-transform:uppercase;">Get in Touch</span>
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,54px);font-weight:700;color:#E8EAED;letter-spacing:-1.5px;margin-bottom:14px;">Let's Build Something <span style="background:linear-gradient(135deg,#00D4FF,#7B61FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Exceptional</span></h2>
+      <p style="font-size:16px;color:#5C6B7A;max-width:520px;margin:0 auto;line-height:1.7;">Open to Cloud Engineering, DevOps, AI Infrastructure, and MLOps roles. Let's connect.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;max-width:1000px;margin:0 auto;">
+
+      <!-- Contact info -->
+      <div data-reveal style="display:flex;flex-direction:column;gap:20px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;color:#E8EAED;margin-bottom:4px;">Contact Information</h3>
+        <p style="font-size:14.5px;color:#5C6B7A;line-height:1.7;">Prefer email for serious inquiries. I typically respond within 24 hours.</p>
+
+        <a href="mailto:vikasrai.tech@gmail.com" style="display:flex;align-items:center;gap:14px;padding:16px 20px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:12px;transition:all .25s;" data-hid="55">
+          <div style="width:40px;height:40px;background:rgba(0,212,255,.1);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-envelope" style="color:#00D4FF;font-size:16px;"></i></div>
+          <div><div style="font-size:12px;color:#445060;margin-bottom:2px;text-transform:uppercase;letter-spacing:.05em;font-weight:600;">Email</div><div style="font-size:14px;color:#E8EAED;font-weight:600;">vikasrai.tech@gmail.com</div></div>
+        </a>
+
+        <a href="https://linkedin.com/in/vikas-rai" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;padding:16px 20px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:12px;transition:all .25s;" data-hid="56">
+          <div style="width:40px;height:40px;background:rgba(10,102,194,.1);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fab fa-linkedin" style="color:#0A66C2;font-size:16px;"></i></div>
+          <div><div style="font-size:12px;color:#445060;margin-bottom:2px;text-transform:uppercase;letter-spacing:.05em;font-weight:600;">LinkedIn</div><div style="font-size:14px;color:#E8EAED;font-weight:600;">linkedin.com/in/vikas-rai</div></div>
+        </a>
+
+        <a href="https://github.com/vikasrai" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;padding:16px 20px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:12px;transition:all .25s;" data-hid="57">
+          <div style="width:40px;height:40px;background:rgba(255,255,255,.06);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fab fa-github" style="color:#E8EAED;font-size:16px;"></i></div>
+          <div><div style="font-size:12px;color:#445060;margin-bottom:2px;text-transform:uppercase;letter-spacing:.05em;font-weight:600;">GitHub</div><div style="font-size:14px;color:#E8EAED;font-weight:600;">github.com/vikasrai</div></div>
+        </a>
+
+        <div style="display:flex;align-items:center;gap:14px;padding:16px 20px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.07);border-radius:12px;">
+          <div style="width:40px;height:40px;background:rgba(0,255,136,.08);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-map-marker-alt" style="color:#00FF88;font-size:16px;"></i></div>
+          <div><div style="font-size:12px;color:#445060;margin-bottom:2px;text-transform:uppercase;letter-spacing:.05em;font-weight:600;">Location</div><div style="font-size:14px;color:#E8EAED;font-weight:600;">Bengaluru, India · Open to Remote</div></div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div data-reveal>
+        <form onsubmit="handleFormSubmit(event); return false;" style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+            <div>
+              <label style="display:block;font-size:12px;font-weight:600;color:#5C6B7A;margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em;">Name</label>
+              <input name="name" required type="text" placeholder="Your name" style="width:100%;padding:12px 16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:9px;color:#E8EAED;font-size:14px;outline:none;transition:border-color .2s;font-family:'Manrope',sans-serif;">
+            </div>
+            <div>
+              <label style="display:block;font-size:12px;font-weight:600;color:#5C6B7A;margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em;">Email</label>
+              <input name="email" required type="email" placeholder="your@email.com" style="width:100%;padding:12px 16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:9px;color:#E8EAED;font-size:14px;outline:none;transition:border-color .2s;font-family:'Manrope',sans-serif;">
+            </div>
+          </div>
+          <div>
+            <label style="display:block;font-size:12px;font-weight:600;color:#5C6B7A;margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em;">Subject</label>
+            <input name="subject" type="text" placeholder="Cloud / DevOps / AI opportunity" style="width:100%;padding:12px 16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:9px;color:#E8EAED;font-size:14px;outline:none;transition:border-color .2s;font-family:'Manrope',sans-serif;">
+          </div>
+          <div>
+            <label style="display:block;font-size:12px;font-weight:600;color:#5C6B7A;margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em;">Message</label>
+            <textarea name="message" required rows="5" placeholder="Tell me about the role or collaboration..." style="width:100%;padding:12px 16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:9px;color:#E8EAED;font-size:14px;outline:none;transition:border-color .2s;resize:vertical;font-family:'Manrope',sans-serif;line-height:1.6;"></textarea>
+          </div>
+          <button type="submit" id="submit-btn" style="padding:13px 28px;background:linear-gradient(135deg,#00D4FF,#0090C8);color:#05080F;font-weight:700;font-size:14.5px;border-radius:10px;transition:all .3s;box-shadow:0 0 24px rgba(0,212,255,.28);display:flex;align-items:center;justify-content:center;gap:9px;cursor:pointer;" data-hid="58">
+            <i class="fas fa-paper-plane" id="submit-icon"></i>
+            <span id="submit-text">Send Message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer style="padding:40px clamp(20px,5vw,80px);border-top:1px solid rgba(255,255,255,.05);">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;">
+    <div>
+      <div style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;background:linear-gradient(135deg,#00D4FF,#7B61FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:6px;">Vikas Rai</div>
+      <div style="font-size:13px;color:#445060;">Engineering Tomorrow's Intelligent Cloud Infrastructure.</div>
+    </div>
+    <div style="display:flex;gap:10px;">
+      <a href="mailto:vikasrai.tech@gmail.com" aria-label="Email" style="width:38px;height:38px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#5C6B7A;transition:all .2s;" data-hid="59"><i class="fas fa-envelope" style="font-size:14px;"></i></a>
+      <a href="https://linkedin.com/in/vikas-rai" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:38px;height:38px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#5C6B7A;transition:all .2s;" data-hid="60"><i class="fab fa-linkedin" style="font-size:14px;"></i></a>
+      <a href="https://github.com/vikasrai" target="_blank" rel="noopener" aria-label="GitHub" style="width:38px;height:38px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#5C6B7A;transition:all .2s;" data-hid="61"><i class="fab fa-github" style="font-size:14px;"></i></a>
+    </div>
+    <div style="font-size:12px;color:#2A3545;width:100%;text-align:center;padding-top:16px;border-top:1px solid rgba(255,255,255,.04);">© 2025 Vikas Rai · All rights reserved · Built with passion &amp; precision</div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top" onclick="scrollToTop()" style="position:fixed;bottom:28px;right:28px;z-index:900;width:46px;height:46px;background:linear-gradient(135deg,#00D4FF,#7B61FF);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#0B0F19;box-shadow:0 4px 20px rgba(0,212,255,.35);opacity:0;transform:translateY(10px);pointer-events:none;transition:all .3s ease;cursor:pointer;" data-hid="62">
+  <i class="fas fa-chevron-up" style="font-size:16px;font-weight:700;"></i>
+</button>
+
+<!-- Toast notification -->
+<div id="toast" style="position:fixed;bottom:90px;right:28px;z-index:1001;padding:14px 20px;background:rgba(11,15,25,.96);border:1px solid rgba(0,212,255,.25);border-radius:12px;display:none;align-items:center;gap:10px;box-shadow:0 8px 32px rgba(0,0,0,.4);backdrop-filter:blur(16px);animation:notification-in .4s ease;">
+  <i id="toast-icon" class="fas fa-check-circle" style="color:#00FF88;font-size:16px;"></i>
+  <span id="toast-msg" style="font-size:14px;color:#E8EAED;font-weight:500;">Message sent successfully!</span>
+</div>
+<script>
+let _toastTimer = null;
+
+
+let particles = [];
+let animFrame = null;
+let typingFrame = null;
+
+function applyBg() {
+    const bg = '#0B0F19';
+    document.body.style.background = bg;
+    // Sync navbar glass tint to match new bg
+    const nav = document.getElementById('navbar');
+    if (nav) {
+      // Parse hex to rgb for rgba composition
+      const r = parseInt(bg.slice(1,3),16), g = parseInt(bg.slice(3,5),16), b = parseInt(bg.slice(5,7),16);
+      nav.style.background = `rgba(${r},${g},${b},.88)`;
+      const mm = document.getElementById('mobile-menu');
+      if (mm) mm.style.background = `rgba(${r},${g},${b},.97)`;
+    }
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    applyBg();
+    initParticles();
+    initTyping();
+    initScrollReveal();
+    initCounters();
+    initNavHighlight();
+    initBackToTop();
+    initResponsive();
+    initProjectFilter();
+    initInputFocus();
+});
+
+
+function initParticles() {
+    const canvas = document.getElementById("particle-canvas");
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const resize = () => {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    };
+    resize();
+    window.addEventListener('resize', resize);
+    particles = [];
+    for (let i = 0; i < 90; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        r: Math.random() * 1.8 + 0.4,
+        a: Math.random() * 0.45 + 0.15,
+        c: Math.random() > 0.55 ? '#00D4FF' : Math.random() > 0.5 ? '#7B61FF' : '#B07FFF',
+      });
+    }
+    const draw = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = p.c;
+        ctx.globalAlpha = p.a;
+        ctx.fill();
+        for (let j = i + 1; j < particles.length; j++) {
+          const q = particles[j];
+          const dx = p.x - q.x, dy = p.y - q.y;
+          const d = Math.sqrt(dx * dx + dy * dy);
+          if (d < 130) {
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(q.x, q.y);
+            ctx.strokeStyle = p.c;
+            ctx.globalAlpha = 0.07 * (1 - d / 130);
+            ctx.lineWidth = 0.6;
+            ctx.stroke();
+          }
+        }
+      }
+      ctx.globalAlpha = 1;
+      animFrame = requestAnimationFrame(draw);
+    };
+    draw();
+}
+
+function initTyping() {
+    const roles = ['Protocol Test Engineer', 'Azure Cloud Engineer', 'DevOps Practitioner', 'AI & MLOps Engineer', '5G Infrastructure Expert'];
+    let ri = 0, ci = 0, deleting = false;
+    const el = document.getElementById('typing-text');
+    if (!el) return;
+    const tick = () => {
+      const role = roles[ri];
+      if (deleting) { ci--; el.textContent = role.substring(0, ci); }
+      else { ci++; el.textContent = role.substring(0, ci); }
+      let delay = deleting ? 45 : 75;
+      if (!deleting && ci === role.length) { delay = 2200; deleting = true; }
+      else if (deleting && ci === 0) { deleting = false; ri = (ri + 1) % roles.length; delay = 350; }
+      typingFrame = setTimeout(tick, delay);
+    };
+    setTimeout(tick, 900);
+}
+
+function initScrollReveal() {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry, idx) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const delay = parseFloat(el.dataset.delay || 0);
+          setTimeout(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+          }, delay);
+          obs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    let groupDelay = 0;
+    let lastParent = null;
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      if (el.parentNode !== lastParent) { groupDelay = 0; lastParent = el.parentNode; }
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(36px)';
+      el.style.transition = 'opacity .65s ease, transform .65s ease';
+      el.dataset.delay = groupDelay;
+      groupDelay += 80;
+      obs.observe(el);
+    });
+}
+
+function initCounters() {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseFloat(el.dataset.target || 0);
+          const suffix = el.dataset.suffix || '';
+          const duration = 1800;
+          const start = performance.now();
+          const animate = (now) => {
+            const t = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const val = Math.floor(target * eased);
+            el.textContent = val + suffix;
+            if (t < 1) requestAnimationFrame(animate);
+            else { el.textContent = target + suffix; el.style.animation = 'counter-pop .3s ease'; }
+          };
+          requestAnimationFrame(animate);
+          obs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.6 });
+    document.querySelectorAll('[data-counter]').forEach(el => obs.observe(el));
+}
+
+function initNavHighlight() {
+    const links = document.querySelectorAll('[data-nav]');
+    const sections = document.querySelectorAll('section[id]');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          links.forEach(l => { l.style.color = '#9AA5B4'; l.style.background = 'transparent'; });
+          const active = document.querySelector(`[data-nav="${entry.target.id}"]`);
+          if (active) { active.style.color = '#00D4FF'; active.style.background = 'rgba(0,212,255,.07)'; }
+        }
+      });
+    }, { threshold: 0.35 });
+    sections.forEach(s => obs.observe(s));
+}
+
+function initBackToTop() {
+    const btn = document.getElementById('back-to-top');
+    if (!btn) return;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        btn.style.opacity = '1'; btn.style.transform = 'translateY(0)'; btn.style.pointerEvents = 'auto';
+      } else {
+        btn.style.opacity = '0'; btn.style.transform = 'translateY(10px)'; btn.style.pointerEvents = 'none';
+      }
+    });
+}
+
+function initResponsive() {
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
+    const handle = () => {
+      const mobile = window.innerWidth < 780;
+      if (menuBtn) menuBtn.style.display = mobile ? 'flex' : 'none';
+      if (navLinks) navLinks.style.display = mobile ? 'none' : 'flex';
+      if (!mobile) {
+        const mm = document.getElementById('mobile-menu');
+        if (mm) mm.style.display = 'none';
+      }
+    };
+    window.addEventListener('resize', handle);
+    handle();
+
+    // Close mobile menu links
+    ['mm-about','mm-skills','mm-exp','mm-proj','mm-learn','mm-contact'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('click', () => {
+        const mm = document.getElementById('mobile-menu');
+        if (mm) mm.style.display = 'none';
+      });
+    });
+}
+
+function initProjectFilter() {
+    const btns = document.querySelectorAll('[data-filter-btn]');
+    const cards = document.querySelectorAll('[data-project-cat]');
+    const resetBtns = () => btns.forEach(b => {
+      b.style.background = 'rgba(255,255,255,.03)';
+      b.style.color = '#9AA5B4';
+      b.style.borderColor = 'rgba(255,255,255,.08)';
+    });
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        resetBtns();
+        btn.style.background = 'rgba(0,212,255,.12)';
+        btn.style.color = '#00D4FF';
+        btn.style.borderColor = 'rgba(0,212,255,.35)';
+        const f = btn.dataset.filterBtn;
+        cards.forEach(card => {
+          if (f === 'all' || card.dataset.projectCat === f) {
+            card.style.display = 'flex';
+            card.style.opacity = '0';
+            card.style.transform = 'scale(.96) translateY(12px)';
+            card.style.transition = 'opacity .4s ease, transform .4s ease';
+            requestAnimationFrame(() => requestAnimationFrame(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1) translateY(0)';
+            }));
+          } else {
+            card.style.transition = 'opacity .25s ease';
+            card.style.opacity = '0';
+            setTimeout(() => { card.style.display = 'none'; }, 260);
+          }
+        });
+      });
+    });
+}
+
+function initInputFocus() {
+    document.querySelectorAll('input, textarea').forEach(el => {
+      el.addEventListener('focus', () => { el.style.borderColor = 'rgba(0,212,255,.4)'; el.style.background = 'rgba(0,212,255,.03)'; });
+      el.addEventListener('blur', () => { el.style.borderColor = 'rgba(255,255,255,.08)'; el.style.background = 'rgba(255,255,255,.03)'; });
+    });
+}
+
+function toggleMenu() {
+    const mm = document.getElementById('mobile-menu');
+    if (!mm) return;
+    const open = mm.style.display === 'flex';
+    mm.style.display = open ? 'none' : 'flex';
+    const icon = document.querySelector('#menu-btn i');
+    if (icon) icon.className = open ? 'fas fa-bars' : 'fas fa-xmark';
+    icon && (icon.style.fontSize = '18px');
+};
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+function handleFormSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const txt = document.getElementById('submit-text');
+    const icon = document.getElementById('submit-icon');
+    if (btn) { btn.disabled = true; btn.style.opacity = '.7'; }
+    if (txt) txt.textContent = 'Sending…';
+    if (icon) icon.className = 'fas fa-spinner fa-spin';
+    setTimeout(() => {
+      if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
+      if (txt) txt.textContent = 'Send Message';
+      if (icon) icon.className = 'fas fa-paper-plane';
+      e.target.reset();
+      showToast('Message sent! I\'ll reply within 24 hours.', true);
+    }, 1500);
+};
+
+function showToast(msg, success = true) {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-msg');
+    const toastIcon = document.getElementById('toast-icon');
+    if (!toast || !toastMsg || !toastIcon) return;
+    toastMsg.textContent = msg;
+    toastIcon.style.color = success ? '#00FF88' : '#FF5F57';
+    toastIcon.className = success ? 'fas fa-check-circle' : 'fas fa-times-circle';
+    toast.style.display = 'flex';
+    toast.style.animation = 'notification-in .4s ease';
+    clearTimeout(_toastTimer);
+    _toastTimer = setTimeout(() => { toast.style.display = 'none'; }, 4000);
+}
+
+
+</script>
+</body>
+</html>
